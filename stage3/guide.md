@@ -1,4 +1,4 @@
-# Selenium Basics 
+# Selenium Login
 ## Part 6 - Login to website.
 Now we will finally interact with website using selenium.
 

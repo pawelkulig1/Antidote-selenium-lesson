@@ -9,6 +9,7 @@ First let's run our http server again:
 python3 server.py
 ```
 <button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('http-server', this)">Run http server</button>
+<div style="color:red">Sometimes there may be error with port binding, wait 10 seconds and try again, this is caused by previous session not being still alive, and blocking port 8080.</div>
 
 First let's curl our webserver:
 ```

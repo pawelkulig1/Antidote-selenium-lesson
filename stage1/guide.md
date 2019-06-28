@@ -1,4 +1,4 @@
-# Selenium Basics 
+# Selenium Overwiev
 ## Part 1 - introduction to selenium automation tool with Python
 
 Welcome to "Introduction to selenium". In this tutorial you will be shown how to use Selenium as web scrapping service.

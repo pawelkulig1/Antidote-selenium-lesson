@@ -1,10 +1,10 @@
 ---
-lessonName: NTP protocol
+lessonName: Selenium automation plugin
 lessonId: 100
 category: fundamentals
 tier: local
-description: Demonstrate how basics of NTP protocol
-slug: NTP
+description: Demonstrates basics of webpage scrapping using selenium
+slug: Selenium
 
 endpoints:
 - name: http-server
