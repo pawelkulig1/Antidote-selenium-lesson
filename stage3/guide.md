@@ -18,7 +18,7 @@ As u may remember website returns login form. We can see there are multiple html
 
 
 
-## Part 7 - Run Selenium
+## Part 7 - Try to login 
 ```
 python3
 from selenium import webdriver # import Selenium to Python
@@ -49,8 +49,8 @@ Let's write login and password and then click submit button. To write something 
 
 ```
 from selenium.webdriver.common.keys import Keys #import keys method
-login.send_keys("little_cat") #write "little_cat" to that field
-passw.send_keys("is_cute")
+login.send_keys("my_login") #write "my_login" to login field.
+passw.send_keys("my_passw")
 button.click() # click button
 ```
 
@@ -61,3 +61,21 @@ Let's see what happened:
 print(browser.page_source)
 ```
 <button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('selenium', this)">Run code</button>
+
+We can see that website has changed! Yes clicking button moved browser to another webpage which says that credentials are incorrect. Now let's try with correct login and password.
+
+## Part 7 - Login with proper credentials
+
+But first let's go back to login page.
+```
+browser.get("http://http-server:8080/")
+print(browser.page_source)
+```
+<button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('selenium', this)">Run code</button>
+
+```
+login.send_keys("little_cat") #write "little_cat" to that field
+passw.send_keys("is_cute")
+button.click() # click button
+print(browser.page_source)
+```
