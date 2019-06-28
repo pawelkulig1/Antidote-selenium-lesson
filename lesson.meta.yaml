@@ -1,0 +1,43 @@
+---
+lessonName: NTP protocol
+lessonId: 100
+category: fundamentals
+tier: local
+description: Demonstrate how basics of NTP protocol
+slug: NTP
+
+endpoints:
+- name: http-server
+  image: pawelkulig/antidote-http-server
+  #image: antidotelabs/utility
+
+  additionalPorts: [8080]
+  presentations:
+  - name: http-server
+    port: 22
+    type: ssh
+
+- name: selenium
+  image: pawelkulig/antidote-selenium #antidotelabs/utility
+  presentations:
+  - name: linux
+    port: 22
+    type: ssh
+
+
+connections:
+- a: http-server
+  b: selenium 
+
+stages:
+  - id: 1
+    description: Selenium overview and run http server
+
+  - id: 2
+    description: Basic Selenium request
+
+  - id: 3
+    description: Login to website
+
+  - id: 4
+    description: Load dynamic page content
