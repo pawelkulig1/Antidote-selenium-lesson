@@ -79,3 +79,10 @@ passw.send_keys("is_cute")
 button.click() # click button
 print(browser.page_source)
 ```
+
+In the end don't forget to close webdriver:
+
+```
+browser.quit()
+```
+<button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('selenium', this)">Close webdriver</button>

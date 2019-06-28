@@ -46,9 +46,11 @@ browser.get("http://http-server:8080/")
 print(browser.page_source)
 ```
 
-<button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('selenium', this)">Run code</button>
+<button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('selenium', this)">Run code</button><br />
 In above example we use Chromedriver as backend to Selenium [Read the docs].
 There are some options that are passed to chromedriver to run it in proper mode (without GUI - since we are running it from terminal).
+We can also see that selenium returned the same output as curl, this should not be suprising since it's requested to do the same thing - print website content.
+
 In the end it is important to close webdriver:
 
 ```

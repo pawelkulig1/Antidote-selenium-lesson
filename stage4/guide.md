@@ -71,3 +71,10 @@ print(browser.page_source)
 ```
 <button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('selenium', this)">Run code</button>
 
+In the end don't forget to close webdriver:
+
+```
+browser.quit()
+```
+<button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('selenium', this)">Close webdriver</button>
+
